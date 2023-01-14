@@ -1,0 +1,20 @@
+{
+ "manifest_version": 2,
+ "name": "Rewards4You",
+ "description": "Save money with payment service recommendations!",
+ "version": "0.1.0",
+ "background": {
+    "scripts": ["login_page_2/background.js"]
+ },
+ "options_page": "login_page_2/options.html",
+ "browser_action": {
+    "default_popup": "login_page/index.html"
+ },
+ "permissions": [
+    "tabs",
+    "https://www.google.com/*",
+    "storage",
+    "http://localhost:3000/"
+ ]
+
+}
