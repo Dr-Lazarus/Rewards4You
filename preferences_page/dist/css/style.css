@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family:  "Nunito", sans-serif;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 550px;
+  background-color: #341f97;
+}
+
+.quiz {
+  display: grid;
+  grid-template-rows: 60px auto;
+  width: 800px;
+  height: 500px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+}
+
+.quiz_header {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -15px;
+  margin-right: -15px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  align-content: center;
+  align-items: center;
+  font-size: larger;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  font-size: 15px;
+}
+.quiz_body {
+  padding: 30px 30px;
+}
+.quiz_user {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 30px;
+}
+.quiz_body {
+  background-color: #ecf0f1;
+  font-size: 12px;
+}
+
+.option_group {
+  list-style-type: none;
+  margin: 30px 0;
+  margin-left: 20px;
+  margin-right: -20px;
+}
+
+.option {
+  display: block;
+  width: 250px;
+  background-color: #fff;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  border-radius: 100px;
+  border: 2px solid transparent;
+  transition: 0.4s all;
+}
+
+.option:hover {
+  cursor: pointer;
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  border: 2px solid #341f97;
+  color: #341f97;
+}
+.option.active {
+  background-color: #341f97;
+  color: #fff;
+}
+.btn-next {
+  border: none;
+  padding: 15px 35px;
+  background-color: #341f97;
+  font-size: 13px;
+  color: #fff;
+  border-radius: 27px;
+  transition: 0.4s all;
+}
+
+.btn-next:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #341f97;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.award_icon {
+  display: block;
+  font-size: 300px;
+  color: #fff;
+}
+
+.username,
+.userpoints,
+.usertime {
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+}
