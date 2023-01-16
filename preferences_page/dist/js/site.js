@@ -1,7 +1,7 @@
 let questions = [
   {
     id: 1,
-    question: "Which type of reward would you prefer (if it's of the same value)?",
+    question: "Which type of reward would you prefer if it's of the same value?",
     options: [
       "Cash",
       "Coupon",
@@ -30,6 +30,12 @@ let questions = [
 
 let question_count = 0;
 let points = 0;
+preferences = [];
+let preferences_data = {
+  "reward_id": "",
+  "preferred_merchant": "",
+  "tier_status": ""
+}
 
 window.onload = function () {
   show(question_count);
@@ -43,11 +49,17 @@ document.addEventListener('DOMContentLoaded', function() {
 function next() {
   // if the question is last then redirect to final page
   if (question_count == questions.length - 1) {
+
+		preferences_data.reward_id = preferences[0];
+    preferences_data.preferred_merchant = preferences[1];
+    preferences_data.tier_status = preferences[2];
+
     location.href = "end.html";
   }
   console.log(question_count);
 
   let user_answer = document.querySelector("li.option.active").innerHTML;
+  preferences.push(user_answer);
   // check if the answer is right or wrong
   // if (user_answer == questions[question_count].answer) {
   //   points += 10;
@@ -87,3 +99,16 @@ function toggleActive() {
     };
   }
 }
+
+$.ajax({
+  type: "POST",
+  url: "https://reqbin.com/echo/post/json",
+  data: JSON.stringify(preferences_data),
+  contentType: "application/json",
+  success: function (result) {
+    console.log(result);
+  },
+  error: function (result, status) {
+    console.log(result);
+  }
+  });

@@ -72,15 +72,12 @@
         $(thisAlert).removeClass('alert-validate');
         $(thisAlert).find('.btn-hide-validate').remove();
     }
-    
-    
-
 })(jQuery);
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById("sign-in-btn").addEventListener("click", goToPreferences);
+    document.getElementById("sign-up-btn").addEventListener("click", goToLogin);
   });
   
-function goToPreferences() {
-    location.href = "../preferences_page/preferences.html";
+function goToLogin() {
+    location.href = "../login_page/index.html";
 }
