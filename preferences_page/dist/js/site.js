@@ -54,7 +54,7 @@ function next() {
     preferences_data.preferred_merchant = preferences[1];
     preferences_data.tier_status = preferences[2];
 
-    location.href = "end.html";
+    location.href = "../login_page/index.html";
   }
   console.log(question_count);
 

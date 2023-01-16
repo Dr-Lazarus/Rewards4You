@@ -75,9 +75,9 @@
 })(jQuery);
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById("sign-up-btn").addEventListener("click", goToLogin);
+    document.getElementById("sign-up-btn").addEventListener("click", goToPreferences);
   });
   
-function goToLogin() {
-    location.href = "../login_page/index.html";
+function goToPreferences() {
+    location.href = "../preferences_page/preferences.html";
 }

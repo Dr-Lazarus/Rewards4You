@@ -78,9 +78,9 @@
 })(jQuery);
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById("sign-in-btn").addEventListener("click", goToPreferences);
+    document.getElementById("sign-in-btn").addEventListener("click", goToRankList);
   });
   
-function goToPreferences() {
-    location.href = "../preferences_page/preferences.html";
+function goToRankList() {
+    location.href = "../rank_list/rank_list.html";
 }

@@ -12,12 +12,7 @@ body {
   align-items: center;
   width: 300px;
   height: 550px;
-  background-color: #341f97;
-  background: rgba(93,84,240,0.5);
-  background: -webkit-linear-gradient(left, rgba(0,168,255,0.5), rgba(187, 0, 255, 0.389));
-  background: -o-linear-gradient(left, rgba(0, 170, 255, 0.437), rgba(185,0,255,0.5));
-  background: -moz-linear-gradient(left, rgba(0,168,255,0.5), rgba(185,0,255,0.5));
-  background: linear-gradient(left, rgba(0,168,255,0.5), rgba(185,0,255,0.5));
+  background: #fff;
 }
 
 .quiz {
@@ -55,7 +50,11 @@ body {
   padding-left: 30px;
 }
 .quiz_body {
-  background-color: #ecf0f1;
+  background: rgba(93,84,240,0.5);
+  background: -webkit-linear-gradient(left, rgba(0,168,255,0.5), rgba(187, 0, 255, 0.389));
+  background: -o-linear-gradient(left, rgba(0, 170, 255, 0.437), rgba(185,0,255,0.5));
+  background: -moz-linear-gradient(left, rgba(0,168,255,0.5), rgba(185,0,255,0.5));
+  background: linear-gradient(left, rgba(0,168,255,0.5), rgba(185,0,255,0.5));
   font-size: 12px;
 }
 
